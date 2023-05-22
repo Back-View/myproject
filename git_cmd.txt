@@ -2,3 +2,5 @@ git提交代码指令：
 git add .
 git commit -m "备注内容"
 git push origin master
+
+git合并多条commit到一条commit:
