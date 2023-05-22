@@ -15,3 +15,29 @@ git提交代码指令：
 
 
 git合并多条commit到一条commit:
+
+怎么把clone别人的git项目上传到自己git库：
+
+		1.先从git库上把自己需要的项目克隆到自己本地
+		  git clone *****
+		
+		2.然后把git项目中的.git文件夹 给删除
+		  rm -rf .git
+		
+		3.进行git初始化
+		  git init
+		
+		4.将本地代码添加到仓库
+		  git add ./注意有空格
+		
+		  git commit -m “上传仓库时的说明”
+		
+		5.关联上远程仓库
+		
+		  git remote add origin https://github.com/Back-View/cplus_ThreadPool
+		
+		6.最后将你的代码上传到Git库
+		  git push --set-upstream origin my_baseline_1.0
+		  git push --set-upstream origin HEAD:refs/for/my_baseline_1.0
+
+
