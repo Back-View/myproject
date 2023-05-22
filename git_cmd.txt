@@ -5,11 +5,11 @@ git提交代码指令：
  3.1、
    git push origin master 表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
  3.2、
-    git push origin HEAD:refs/for 意思是将当前分支(HEAD)推送到远程仓库(origin)的"refs/for"分支。
-    git push 肯定是推送
+   git push origin HEAD:refs/for 意思是将当前分支(HEAD)推送到远程仓库(origin)的"refs/for"分支。
+   git push 肯定是推送
   origin : 是远程的库的名字
   HEAD: 是一个特别的指针，它是一个指向你正在工作的本地分支的指针，
-   可以把它当做本地分支的别名，git这样就可以知道你工作在哪个分支
+  可以把它当做本地分支的别名，git这样就可以知道你工作在哪个分支
   refs/for :意义在于我们提交代码到服务器之后是需要经过 code review 之后才能进行merge的
   refs/heads： 不需要
 
